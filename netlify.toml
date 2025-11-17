@@ -1,0 +1,15 @@
+[build]
+  # This specifies the directory where your compiled/built site assets live.
+  # Assuming Vite's default build output is 'dist'.
+  publish = "dist" 
+
+  # This specifies the directory where your serverless functions are located.
+  functions = "netlify/functions" 
+
+[[redirects]]
+  # This is the crucial part: it tells Netlify to redirect
+  # any request starting with /api/ (e.g., /api/fetchNews) 
+  # to the actual function path.
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
