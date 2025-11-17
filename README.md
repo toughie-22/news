@@ -1,4 +1,4 @@
-                                                  #React News Website — READMe
+                                                  React News Website — READMe
 This project is a React-based News Website built using Vite.
 
 The purpose of the application is to fetch and display real-time news articles from external news APIs, organize them into categories, and present them in a clean, responsive interface.
